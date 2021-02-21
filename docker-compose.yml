@@ -1,0 +1,10 @@
+version: '2'
+services:
+  ansible:
+    container_name: jsfscan
+    hostname: jsfscan
+    image: jsfscan:latest
+    volumes:
+      - ../hosts:/hosts
+    working_dir: /hosts
+    entrypoint: ["sleep","99999999999999999"]
