@@ -1,0 +1,6 @@
+./JSFScan.sh -l hosts.txt --all -r -o alibabagroup
+
+./JSFScan.sh -l hosts.txt -s -e -r -o log/chim2
+
+
+cat jslinksecret.txt | grep -B 1 ">" >> workig.txt
